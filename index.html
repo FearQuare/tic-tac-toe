@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Welcome to my Tic-Tac-Toe Game!</h1>
-    <button>Start the Game!</button>
+    <h1 class="display">Welcome to my Tic-Tac-Toe Game!</h1>
+    <button class="select-signs">Select Signs Then Start the Game!</button>
     <div class="container">
         <div class="cell" id="cell-1"></div>
         <div class="cell" id="cell-2"></div>
@@ -20,6 +22,23 @@
         <div class="cell" id="cell-8"></div>
         <div class="cell" id="cell-9"></div>
     </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <form>
+                <label for="playerX">Player X:</label>
+                <input type="text" id="playerX" name="playerX" required>
+                <label for="playerO">Player O:</label>
+                <input type="text" id="playerO" name="playerO" required>
+                <button type="submit" id="startGame" style="margin-top: 10px; padding:
+                                           5px 10px; background-color: #007bff; color: #fff; 
+                                           border: none; border-radius: 3px;">Start Game</button>
+            </form>
+            <button id="closePopup" style="margin-top: 10px; padding:
+                                           5px 10px; background-color: #dc3545; color: #fff; 
+                                           border: none; border-radius: 3px;">Close</button>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
+
 </html>
